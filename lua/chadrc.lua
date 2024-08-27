@@ -7,10 +7,10 @@ local M = {}
 M.ui = {
 	theme = "catppuccin",
 
-	-- hl_override = {
-	-- 	Comment = { italic = true },
-	-- 	["@comment"] = { italic = true },
-	-- },
+	hl_override = {
+		Comment = { fg = "#646e82", italic = false, bold = true },
+		["@comment"] = { fg = "#646e82", italic = false, bold = true  },
+	},
 }
 
 return M
