@@ -1,6 +1,6 @@
 ![Diagram](screenshot.png)
 
----------
+★★★
 
 # Install NvChad
 
