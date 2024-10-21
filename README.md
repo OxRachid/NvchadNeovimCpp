@@ -6,7 +6,7 @@
 To install NvChad with support for C/C++ on Termux, run the following command:
 
 ```
-git clone https://github.com/OxRachid/NvchadNeovimCppx ~/.config/nvim && nvim
+git clone git@github.com:OxRachid/NvchadNeovimCpp.git ~/.config/nvim && nvim
 ```
 
 ## Additional Setup for Termux
