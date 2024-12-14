@@ -6,7 +6,7 @@ local options = {
 		cpp = { "clang_format" },
 		sh = { "shfmt" }, -- Add shfmt for sh files
 		bash = { "shfmt" }, -- Add shfmt for bash files
-		python = { "black" },
+		python = { "isort", "black" },
 	},
 
 	formatters = {
@@ -43,6 +43,12 @@ local options = {
 				"--fast",
 				"--line-length",
 				"150",
+			},
+		},
+		isort = {
+			prepend_args = {
+				"--profile",
+				"black",
 			},
 		},
 	},

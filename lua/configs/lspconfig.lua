@@ -3,6 +3,7 @@ local on_init = require("nvchad.configs.lspconfig").on_init
 local capabilities = require("nvchad.configs.lspconfig").capabilities
 
 local lspconfig = require("lspconfig")
+local util = require("lspconfig.util")
 
 -- list of all servers configured.
 lspconfig.servers = {
@@ -22,6 +23,22 @@ for _, lsp in ipairs(default_servers) do
 		capabilities = capabilities,
 	})
 end
+
+lspconfig.pyright.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+	filetypes = { "python" },
+	root_dir = util.root_pattern(".git", "setup.py", "setup.cfg", "pyproject.toml", "requirements.txt"),
+	settings = {
+		python = {
+			analysis = {
+				autoSearchPaths = true,
+				useLibraryCodeForTypes = true,
+				diagnosticMode = "workspace",
+			},
+		},
+	},
+})
 
 -- Add bash-language-server configuration
 lspconfig.bashls.setup({
