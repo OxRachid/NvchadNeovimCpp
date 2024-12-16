@@ -42,7 +42,7 @@ local opt = vim.opt
 opt.foldmethod = "expr"
 opt.foldexpr = "nvim_treesitter#foldexpr()"
 -- Customize fold level (higher means more unfolded sections)
-vim.o.foldlevel = 999
+vim.o.foldlevel = 0
 -- Define custom fold text
 vim.opt.foldtext = "v:lua.CustomFoldText()"
 -- Custom fold text function
@@ -56,3 +56,6 @@ end
 vim.cmd([[
   hi Folded guifg=#ff9e64 guibg=#1e222a
 ]])
+
+vim.api.nvim_set_keymap("n", "<C-r>", ":bnext<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<C-p>", ":bprevious<CR>", { noremap = true, silent = true })
