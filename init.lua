@@ -57,5 +57,5 @@ vim.cmd([[
   hi Folded guifg=#ff9e64 guibg=#1e222a
 ]])
 
-vim.api.nvim_set_keymap("n", "<C-r>", ":bnext<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<C-m>", ":bnext<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<C-p>", ":bprevious<CR>", { noremap = true, silent = true })
