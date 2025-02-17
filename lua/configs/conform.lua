@@ -14,19 +14,31 @@ local options = {
 		clang_format = {
 			prepend_args = {
 				"-style={ \
+                BasedOnStyle: LLVM, \
                 IndentWidth: 4, \
                 TabWidth: 4, \
                 UseTab: Never, \
+                AlwaysBreakAfterReturnType: None, \
+                AlwaysBreakAfterDefinitionReturnType: None, \
+                BreakConstructorInitializers: BeforeComma, \
+                PenaltyBreakBeforeFirstCallParameter: 100, \
                 AccessModifierOffset: 0, \
                 IndentAccessModifiers: true, \
-                PackConstructorInitializers: Never,\
-                IndentCaseLabels: true,\
-                NamespaceIndentation: All,\
+                PackConstructorInitializers: Never, \
+                IndentCaseLabels: true, \
+                NamespaceIndentation: All, \
                 PenaltyBreakString: 1000, \
                 PenaltyExcessCharacter: 1000000, \
-                ColumnLimit: 1200,\
+                ColumnLimit: 0, \
                 AllowShortFunctionsOnASingleLine: Empty, \
-                AllowShortEnumsOnASingleLine: false}",
+                AllowShortEnumsOnASingleLine: false, \
+                AllowShortLambdasOnASingleLine: Empty, \
+                BinPackArguments: false, \
+                BinPackParameters: false, \
+                AllowAllArgumentsOnNextLine: false, \
+                AllowAllParametersOfDeclarationOnNextLine: true, \
+                AlignAfterOpenBracket: DontAlign, \
+                AlignOperands: Align}",
 			},
 		},
 		-- Bash - zsh

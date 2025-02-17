@@ -59,3 +59,11 @@ vim.cmd([[
 
 vim.api.nvim_set_keymap("n", "<C-m>", ":bnext<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<C-p>", ":bprevious<CR>", { noremap = true, silent = true })
+
+vim.cmd([[
+     highlight LineNr guifg=#808080
+    highlight CursorLineNr guifg=#FF8C00
+    highlight CursorColumn guibg=#202020
+ ]])
+
+vim.cmd("highlight Visual guibg=#0B243C guifg=NONE")

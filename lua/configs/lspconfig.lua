@@ -8,7 +8,6 @@ local util = require("lspconfig.util")
 -- list of all servers configured.
 lspconfig.servers = {
 	"lua_ls",
-	"bashls", -- Add bash-language-server
 	"pyright",
 }
 
