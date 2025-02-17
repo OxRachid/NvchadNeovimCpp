@@ -20,7 +20,6 @@ local options = {
                 UseTab: Never, \
                 AlwaysBreakAfterReturnType: None, \
                 AlwaysBreakAfterDefinitionReturnType: None, \
-                BreakConstructorInitializers: BeforeComma, \
                 PenaltyBreakBeforeFirstCallParameter: 100, \
                 AccessModifierOffset: 0, \
                 IndentAccessModifiers: true, \
