@@ -18,9 +18,6 @@ local options = {
                 IndentWidth: 4, \
                 TabWidth: 4, \
                 UseTab: Never, \
-                AlwaysBreakAfterReturnType: None, \
-                AlwaysBreakAfterDefinitionReturnType: None, \
-                PenaltyBreakBeforeFirstCallParameter: 100, \
                 AccessModifierOffset: 0, \
                 IndentAccessModifiers: true, \
                 PackConstructorInitializers: Never, \
@@ -28,14 +25,10 @@ local options = {
                 NamespaceIndentation: All, \
                 PenaltyBreakString: 1000, \
                 PenaltyExcessCharacter: 1000000, \
-                ColumnLimit: 0, \
+                ColumnLimit: 1200, \
                 AllowShortFunctionsOnASingleLine: Empty, \
                 AllowShortEnumsOnASingleLine: false, \
                 AllowShortLambdasOnASingleLine: Empty, \
-                BinPackArguments: false, \
-                BinPackParameters: false, \
-                AllowAllArgumentsOnNextLine: false, \
-                AllowAllParametersOfDeclarationOnNextLine: true, \
                 AlignAfterOpenBracket: DontAlign, \
                 AlignOperands: Align}",
 			},
